@@ -13,7 +13,7 @@ Dataflow Gen2 → Fabric Warehouse → Semantic Model → Power BI
 - Interactive Power BI dashboards for revenue and customer analysis
 
 ## Tech Stack
-- Microsoft Fabric
+- Microsoft Fabric (Trial Version)
 - Dataflows Gen2
 - Fabric Warehouse
 - Power BI
