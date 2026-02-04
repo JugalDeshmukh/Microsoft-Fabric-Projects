@@ -1,7 +1,7 @@
 # Retail Sales Analytics Platform – Microsoft Fabric
 
 ## Overview
-End-to-end analytics project built using Microsoft Fabric to transform raw retail data into business insights.
+End-to-end analytics project built using Microsoft Fabric (trial version) to transform raw retail data into business insights.
 
 ## Architecture
 Dataflow Gen2 → Fabric Warehouse → Semantic Model → Power BI
