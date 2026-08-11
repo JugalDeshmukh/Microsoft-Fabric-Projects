@@ -1,0 +1,8 @@
+.create table RawTransactions (
+    tx_id: long,
+    cust_id: string,
+    amount: real,
+    location: string,
+    timestamp: datetime,
+    fraud_type: string
+)

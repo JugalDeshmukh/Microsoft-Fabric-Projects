@@ -1,0 +1,8 @@
+"fraud rule 2"
+RawTransactions
+| order by cust_id asc, timestamp desc
+| extend prev_location = prev(location), prev_time = prev(timestamp), prev_cust = prev(cust_id)
+| where cust_id == prev_cust and location != prev_location
+| extend time_difference_seconds = datetime_diff('second', prev_time, timestamp)
+| where time_difference_seconds between (1 .. 120)
+| project timestamp, cust_id, CurrentLocation = location, PreviousLocation = prev_location, time_difference_seconds, AlertReason = "Impossible Travel Anomaly"

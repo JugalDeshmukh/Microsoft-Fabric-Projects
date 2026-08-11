@@ -1,0 +1,15 @@
+"Fraud rule 1"
+RawTransactions
+| where amount > 0
+| summarize
+    tx_count = count(),
+    total_spend = sum(amount)
+    by cust_id, bin(timestamp, 10s)
+| where tx_count >= 2
+| project
+    timestamp,
+    cust_id,
+    tx_count,
+    total_spend,
+    AlertReason = "Velocity Attack Detected"
+| order by timestamp desc

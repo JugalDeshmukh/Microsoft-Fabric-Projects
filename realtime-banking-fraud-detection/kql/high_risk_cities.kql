@@ -1,0 +1,5 @@
+
+RawTransactions
+| where fraud_type != "None"
+| summarize IncidentCount = count() by location
+| top 5 by IncidentCount desc
