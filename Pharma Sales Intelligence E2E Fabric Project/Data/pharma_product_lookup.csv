@@ -1,0 +1,19 @@
+ProductID,TherapeuticArea,DrugName,MarketSegment
+1,Cardiology,LipidShield (Atorvastatin),Prescription - Chronic
+2,Cardiology,VascuPress (Amlodipine),Prescription - Chronic
+3,Cardiology,CardioBeta (Metoprolol),Prescription - Chronic
+4,Endocrinology,GlucoReg (Metformin),Prescription - Chronic
+5,Endocrinology,InsuPeak (Insulin Glargine),Prescription - Specialty
+6,Endocrinology,GlycoSGLT (Empagliflozin),Prescription - Chronic
+7,Oncology,OncoTarget (Pembrolizumab),Biologics - Specialty
+8,Oncology,CytoBlock (Paclitaxel),Chemotherapy - Acute
+9,Oncology,ImmuShield (Nivolumab),Biologics - Specialty
+10,Respiratory,PulmoBreathe (Albuterol),Prescription - Acute
+11,Respiratory,AirClear (Fluticasone),Prescription - Chronic
+12,Neurology,NeuroCalm (Gabapentin),Prescription - Chronic
+13,Neurology,DopaRestore (Levodopa),Prescription - Chronic
+14,Infectious Disease,CiproMax (Ciprofloxacin),Antibiotic - Acute
+15,Infectious Disease,AmoxiGuard (Amoxicillin),Antibiotic - Acute
+16,Immunology,InflamMab (Adalimumab),Biologics - Specialty
+17,Immunology,DermaCalm (Dupilumab),Biologics - Specialty
+18,Gastroenterology,GastroRelief (Omeprazole),OTC / Prescription
