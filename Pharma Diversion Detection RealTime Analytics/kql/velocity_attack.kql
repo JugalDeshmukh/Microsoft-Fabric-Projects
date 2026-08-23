@@ -1,0 +1,16 @@
+//Rule 1: Doctor Shopping / Rapid Multi-Pharmacy Dispensing (10-second Window)
+// Updated Rule 1: High-frequency dispensing within a 2-minute window
+RawPrescriptions
+| where units_dispensed > 0
+| summarize 
+    rx_count = count(), 
+    total_units = sum(units_dispensed),
+    latest_event = max(timestamp)
+    by patient_id, bin(timestamp, 2m)
+| where rx_count > 1
+| project 
+    timestamp, 
+    patient_id, 
+    rx_count, 
+    total_units, 
+    AlertReason = "Doctor Shopping Velocity Attack"

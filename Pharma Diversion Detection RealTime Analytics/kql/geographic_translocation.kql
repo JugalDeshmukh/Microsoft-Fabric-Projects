@@ -1,0 +1,8 @@
+//Rule 2: Cross-State Impossible Travel Translocation (Under 2 Minutes
+RawPrescriptions
+| order by patient_id asc, timestamp desc
+| extend prev_location = prev(location), prev_time = prev(timestamp), prev_patient = prev(patient_id)
+| where patient_id == prev_patient and location != prev_location
+| extend time_diff_sec = datetime_diff('second', prev_time, timestamp)
+| where time_diff_sec between (1 .. 120)
+| project timestamp, patient_id, CurrentLocation = location, PreviousLocation = prev_location, time_diff_sec, AlertReason = "Cross-State Geographic Translocation"

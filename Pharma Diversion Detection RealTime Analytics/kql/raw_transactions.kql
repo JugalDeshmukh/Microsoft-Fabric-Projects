@@ -1,0 +1,11 @@
+.create table RawPrescriptions (
+    rx_id: long,
+    patient_id: string,
+    hcp_dea_id: string,
+    drug_name: string,
+    units_dispensed: real,
+    location: string,
+    timestamp: datetime,
+    anomaly_type: string,
+    risk_score: real
+)
