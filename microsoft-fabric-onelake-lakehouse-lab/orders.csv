@@ -1,0 +1,6 @@
+order_id,customer_name,city,amount_inr,order_date
+101,Aarav Sharma,Hyderabad,2450,01-11-26
+102,Meera Nair,Bengaluru,4800,02-11-26
+103,Rohan Kulkarni,Pune,1950,02-11-26
+104,Ananya Iyer,Chennai,6200,03-11-26
+105,Vikram Rao,Hyderabad,3100,04-11-26
