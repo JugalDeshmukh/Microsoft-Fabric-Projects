@@ -31,4 +31,4 @@ Retail sales records and regional city mappings are often stored in disconnected
 * **Automated Ingestion:** Replace manual CSV uploads with **Dataflows Gen2** or a **Fabric Pipeline** to ingest daily order drops automatically.
 * **Date Dimension Table:** Add a dedicated `DimDate` table using DAX or PySpark to enable Time Intelligence metrics (MoM growth, YTD revenue).
 * **Security & Governance:** Implement **Row-Level Security (RLS)** on `cities[region]` so South and West regional managers only view their respective territories.
-* **Cross-Workspace Sharing:** Share the tables with other teams using OneLake Shortcuts instead of copying files. **OneLake Shortcuts**.
+* **Cross-Workspace Sharing:** Share the tables with other teams using **OneLake Shortcuts** instead of copying files.
