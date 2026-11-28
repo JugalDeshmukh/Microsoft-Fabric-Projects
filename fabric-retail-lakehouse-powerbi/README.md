@@ -1,6 +1,13 @@
 # End-to-End Retail Analytics with Microsoft Fabric & Power BI (Direct Lake)
 
+## Project Title: Multi-City Retail Sales & Regional Performance Analytics
+
 An end-to-end data engineering and business intelligence mini-project built on **Microsoft Fabric**, demonstrating unified storage with **OneLake**, dimensional modeling in a **Lakehouse**, and zero-copy reporting using a **Direct Lake Semantic Model**.
+
+Business Problem: A retail business tracks daily orders across Indian cities, while regional managers maintain separate city-to-region mappings. 
+Currently, analysts manually combine spreadsheets to calculate regional revenue and average order values, leading to duplicate files and inconsistent numbers.
+
+Solution: Centralize raw files in OneLake, structure them into a Star Schema inside a Fabric Lakehouse (Sales_Lakehouse), and build a Direct Lake Semantic Model with standardized DAX measures powering an interactive Power BI dashboard.
 
 ## Problem Statement
 Retail sales records and regional city mappings are often stored in disconnected spreadsheets, causing duplicate data storage, manual aggregation errors, and delayed reporting. The goal is to build a single-copy analytical pipeline from raw CSV ingestion to an interactive executive dashboard without moving or duplicating data.
