@@ -1,0 +1,6 @@
+Project Title: Multi-City Retail Sales & Regional Performance Analytics
+
+Business Problem: A retail business tracks daily orders across Indian cities, while regional managers maintain separate city-to-region mappings. 
+Currently, analysts manually combine spreadsheets to calculate regional revenue and average order values, leading to duplicate files and inconsistent numbers.
+
+Solution: Centralize raw files in OneLake, structure them into a Star Schema inside a Fabric Lakehouse (Sales_Lakehouse), and build a Direct Lake Semantic Model with standardized DAX measures powering an interactive Power BI dashboard.

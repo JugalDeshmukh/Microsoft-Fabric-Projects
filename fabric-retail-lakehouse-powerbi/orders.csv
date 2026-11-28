@@ -1,0 +1,13 @@
+order_id,customer_name,city,product_category,amount_inr,order_date
+101,Aarav Sharma,Hyderabad,Electronics,24500,01-11-26
+102,Meera Nair,Bengaluru,Apparel,4800,02-11-26
+103,Rohan Kulkarni,Pune,Home Decor,3200,02-11-26
+104,Ananya Iyer,Chennai,Electronics,18500,03-11-26
+105,Vikram Rao,Hyderabad,Groceries,2100,04-11-26
+106,Sneha Patil,Mumbai,Electronics,32000,05-11-26
+107,Karthik Reddy,Bengaluru,Home Decor,5400,06-11-26
+108,Priya Nair,Chennai,Apparel,3900,07-11-26
+109,Siddharth Joshi,Pune,Electronics,15200,08-11-26
+110,Divya Menon,Mumbai,Apparel,6100,09-11-26
+111,Arjun Verma,Hyderabad,Home Decor,4700,10-11-26
+112,Neha Deshmukh,Bengaluru,Electronics,28900,11-11-26
